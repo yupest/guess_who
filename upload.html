@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Угадай кто? — Своя игра</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://raw.githubusercontent.com/yupest/guess_who/main/data/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Создайте свой мир для игры Угадай кто?">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/ff9a572a50.js"></script>
+</head>
+<body>
+<section class="section" style = "flex: 1;">
+
+  <div class="menu">
+    <h1>Угадай кто?<span name="game"></span><span name="count"></span></h1>
+    <div class="menu-icons">
+      <a href="./" title="На главную">
+        <i class="fa fa-home refresh-game fa-fw">
+          <span class="tooltiptext">Вернуться на главную страницу</span>
+        </i>
+      </a>
+    </div>
+  </div>
+
+  <div class="message" style="margin-bottom:20px">
+    <p style="margin:0 0 12px 0">
+      Загрузи файл CSV с персонажами (получить его можно в <a href="./constructor.html">"Конструктор мира"</a>).<br>
+
+      <div class="add-data" id="add-data" onclick="uploadData()">
+        <i class="fa fa-upload fa-2x"></i>
+        <span>Загрузить данные</span>
+        <input type="file" id="file-input" class="file-input-hidden" accept=".csv">
+      </div><br>
+
+      Играйте как обычно 😎
+    </p>
+  </div>
+
+  <div id="hero"></div>
+  <div id="game" class="grid"></div>
+
+  <script src="js/game_core.js"></script>
+  <script src="js/script_upload.js"></script>
+</section>
+
+<footer class="footer">
+  <a href="https://github.com/yupest/guess_who" target="_blank">yupest</a>
+</footer>
+</body>
+</html>

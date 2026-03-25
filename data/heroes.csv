@@ -1,7 +1,9 @@
 index_character,hero,url,index,index_world
-1,,https://forms.gle/ezzDeRL6WM3gbXTr7,1,0
-1,,https://forms.gle/kx9hjRVi6KT9TyFg7,2,1
-1,,payment.html,3,2
+1,,form.html,1,-5
+1,,constructor.html,2,-4
+1,,upload.html,3,-3
+1,,https://forms.gle/kx9hjRVi6KT9TyFg7,4,-2
+1,,payment.html,5,-1
 27,Линейный график,https://datavizcatalogue.com/RU/images/buttons/SVG/on/line_graph.svg,2329,3
 26,График Каги,https://datavizcatalogue.com/RU/images/buttons/SVG/on/kagi_chart.svg,2328,3
 25,Иллюстрационная диаграмма,https://datavizcatalogue.com/RU/images/buttons/SVG/on/illustration_diagram.svg,2327,3

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Угадай кто?</title>
+  <title>Угадай кто? – Мультивселенная</title>
   <meta charset="UTF-8">
   <link rel="icon" href="https://raw.githubusercontent.com/yupest/guess_who/main/data/favicon.ico" type="image/x-icon">
   <meta name="description" content="Онлайн игра «Угадай кто?» (Guess who?). Играйте вместе с друзьями, выбирайте мир и загадайте своих персонажей. Вам предстоит отгадывать персонажа противника, задавая односложные вопросы. Исключайте неподходящих персонажей. Выигрывает тот, кто быстрее отгадает персонажа противника!">
@@ -9,51 +9,50 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://use.fontawesome.com/ff9a572a50.js"></script>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-     ym(76508137, "init", {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true,
-          webvisor:true
-     });
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(76508137, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
   </script>
-  <script src="js/script_collection.js"></script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/76508137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><div><img src="https://mc.yandex.ru/watch/76508137" style="position:absolute; left:-9999px;" alt=""></div></noscript>
   <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-
 <section class="section">
-  <div name = 'menu' style="height:80px">
-  <h1 style = "float:left;display:block;">Угадай кто?<span name = 'game'></span><span name="count"></span></h1>
-  <h1 style = "margin:0 0 0.5em 0; display:block; float:right"> 
-    <a name = 'home' href = './'><span name = 'back'></span></a>
-    <span name="clear"></span>
-    <span name="play"></span>
-  </h1>
-  </div>
-  
-  <div class = "message" style="height:auto">
-    <p>
-    Создай свою мультивселенную! Выбери персонажей из предложенных миров для создания своей коллекции. Перейди в мир по клику, чтобы открыть карточки персонажей. Кликай на карточки персонажей, чтобы добавить в коллекцию. Двойной клик по названию мира добавит в коллекцию всех доступных персонажей. Чтобы удалить персонажа - дважды кликни по нему в коллекции. Максимальный размер коллекции - 48 персонажей.
-    </p>
-    <div id = 'collection' class="grid" style="margin-top:10px"></div>
-  </div>
 
-  <div class="share-url"></div>
-  <div id = 'hero'></div>
-  <div>
-    <div id = 'game' class="grid"></div>
-    <div style="margin-top:30px">
-        <div id = 'worlds' class="grid"></div>
-        <div id = 'items' class="grid"></div>
+  <div class="menu">
+    <h1>Угадай кто?<span name="game"></span><span name="count"></span></h1>
+    <div class="menu-icons">
+      <a name="home" href="./"><span name="back"></span></a>
+      <span name="clear"></span>
+      <span name="play"></span>
     </div>
   </div>
 
+  <div class="message" style="height:auto">
+    <p>
+      Создай свою мультивселенную! Выбери персонажей из предложенных вселенных для создания своей коллекции. Перейди в мир вселенной по клику из левого списка, чтобы открыть карточки персонажей. Кликай на карточки персонажей, чтобы добавить в коллекцию. Двойной клик по названию мира добавит в коллекцию всех доступных персонажей. Чтобы удалить персонажа — дважды кликни по нему в коллекции. Максимальный размер коллекции — 48 персонажей.
+    </p>
+    <div id="collection" class="grid" style="margin-top:10px"></div>
+  </div>
+
+  <div class="share-url"></div>
+  <div id="hero"></div>
+  <div>
+    <div id="game" class="grid"></div>
+    <div style = "overflow:hidden;">
+      <div id="worlds" class="grid"></div>
+      <div id="items" class="grid"></div>
+    </div>
+  </div>
+
+  <script src="js/game_core.js"></script>
+  <script src="js/script_collection.js"></script>
+
 </section>
+<footer class="footer">
+  <a href="https://github.com/yupest/guess_who" target="_blank">yupest</a>
+</footer>
 </body>
 </html>

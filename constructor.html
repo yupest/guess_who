@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Угадай кто? — Конструктор</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://raw.githubusercontent.com/yupest/guess_who/main/data/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Создайте свой мир для игры Угадай кто?">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/ff9a572a50.js"></script>
+</head>
+<body>
+<section class="section">
+
+  <div class="menu">
+    <h1>Угадай кто?<span id="world-title-display"></span></h1>
+    <div class="menu-icons">
+      <a href="./" title="На главную">
+        <i class="fa fa-home refresh-game">
+          <span class="tooltiptext">Вернуться на главную страницу</span>
+        </i>
+      </a>
+      <span id="btn-clear" title="Очистить" onclick="clearAll()">
+        <i class="fa fa-refresh refresh-game" style="color:#2c2c2c">
+          <span class="tooltiptext">Очистить</span>
+        </i>
+      </span>
+      <button id="download-btn" title="Скачать данные" class="download-btn refresh-game" onclick="startGame()" disabled>
+        <i class="fa fa-download">
+          <span class="tooltiptext">Скачать данные</span>
+        </i>
+      </button>
+    </div>
+  </div>
+
+  <div class="message" style="margin-bottom:20px">
+    <p style="margin:0 0 12px 0">
+      Это конструктор собственной вселенной: задай название, добавь до 48 персонажей — загрузи картинки и задай имя каждому. Доступна загрузка сразу множества файлов.<br>
+      Чтобы загрузить картинки, потребуется зарегистрироваться в сервисе хостинга изображений <a href="https://imgbb.com/">ImgBB</a> и получить <a href="https://api.imgbb.com/">ключ</a>.<br>
+      Нажми <strong>"Скачать данные"</strong> — получишь файл с загруженными персонажами. Поделись с ним с оппонентом, а затем — загрузите его в <a href="./upload.html">Свою игру</a>.
+    </p>
+
+    <div class="world-name-row">
+      <label>Название мира:</label>
+      <input class="world-name-input" id="world-name" type="text" placeholder="Мой мир" maxlength="100"
+             oninput="updateTitle()">
+    </div>
+
+    <div class="imgbb-key-row">
+      <label>ImgBB key:</label>
+      <input class="imgbb-key-input" id="ImgBB-key" type="text" placeholder="xxxxxxxxxxxxxxx"
+             oninput="saveKey()">
+    </div>
+  </div>
+
+  <div class="count-label" id="count-label">Персонажей: 0 / 48</div>
+
+  <div class="heroes-grid" id="heroes-grid">
+    <div class="add-card" id="add-card" onclick="triggerAdd()">
+      <i class="fa fa-plus fa-2x"></i>
+      <span>Добавить персонажа</span>
+    </div>
+  </div>
+
+  <div class="status-bar" id="status-bar"></div>
+
+  <input type="file" id="file-input" class="file-input-hidden" accept="image/*" multiple>
+
+  <script src="js/script_constructor.js"></script>
+</section>
+</body>
+<footer class="footer">
+  <a href="https://github.com/yupest/guess_who" target="_blank">yupest</a>
+</footer>
+</html>

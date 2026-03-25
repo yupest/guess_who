@@ -9,47 +9,55 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://use.fontawesome.com/ff9a572a50.js"></script>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-     ym(76508137, "init", {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true,
-          webvisor:true
-     });
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(76508137, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/76508137" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><div><img src="https://mc.yandex.ru/watch/76508137" style="position:absolute; left:-9999px;" alt=""></div></noscript>
   <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-
 <section class="section">
-  <!-- <h1><span name = 'main'><span name = 'back'></span>Угадай кто?</span><span name="game"></span><span name="count"></span></h1> -->
-  <div name = 'menu' style="height:80px">
-  <h1 style = "float:left;display:block;">Угадай кто?<span name = 'game'></span><span name="count"></span></h1>
-  <h1 style = "margin:0 0 0.5em 0; display:block; float:right"> 
-    <a name = 'home' href = './'><span name = 'back'></span></a>
-    <span name="clear"></span>
-    <!-- <span name="play"></span> -->
-  </h1>
+
+  <div class="menu">
+    <h1>Угадай кто?<span name="game"></span><span name="count"></span></h1>
+    <div class="menu-icons">
+      <a name="home" href="./"><span name="back"></span></a>
+      <span name="clear"></span>
+    </div>
   </div>
-  <p class = "message">
-    Добро пожаловать в игру — аналог настольной. Свяжись со своим оппонентом, вместе выберите мир, загадайте своих персонажей. Вам предстоит отгадывать персонажа противника, задавая односложные вопросы. Исключайте неподходящих персонажей, кликая по ним. Выигрывает тот, кто быстрее отгадает персонажа противника!Благодарю тех, кто принимает участие в создании новых миров, с вашей помощью проект поддерживается! Вы также можете сказать "Спасибо" через кнопку "Оценить" и "Помочь проекту", так обновления будут чаще:)<br><br>
-    Есть два режима игры: <br><br>
-    1) Коллекция из 24 персонажей конкретного мира. <br>
-    После названия Мира в скобках указан размер банка персонажей. Из него для игры подбираются случайным образом 24 персонажа. <br><br>
-    2) Собрать коллекцию персонажей из доступных миров. <br>
-    Для этого перейдите в режим "Собрать свою коллекцию". Максимальный размер коллекции - 48 персонажей.
-  </p>
+
+  <details class="message">
+    <summary>
+    Добро пожаловать в игру — аналог настольной "Угадай кто?".<br> 
+    Свяжись со своим оппонентом, вместе выберите вселенную, загадайте своих персонажей. 
+    Вам предстоит отгадывать персонажа противника, задавая односложные вопросы. Исключайте неподходящих персонажей, кликая по ним. Выигрывает тот, кто быстрее отгадает персонажа противника!
+    </summary>
+    <p>Есть 3 режима игры:<br><br>
+    1) Коллекция из 24 персонажей в рамках одной из предложенных вселенных.<br>
+    На этой странице представлены загруженные вселенные. После названия вселенной в скобках указан размер банка персонажей. Из него для игры подбирается случайным образом коллекция из 24 персонажей. Отправь ссылку оппоненту, и он увидит коллекцию вселенной с теми же персонажами, в том же порядке.<br><br>
+    2) Собрать коллекцию персонажей из доступных вселенных.<br>
+    Для этого перейдите в режим <strong><a href="form.html">"Мультивселенная"</a></strong>. Максимальный размер коллекции — 48 персонажей. Переходите по вселенным и выбирайте только нужных вам персонажей. Отправь ссылку оппоненту, и он увидит твою кастомную коллекцию.<br><br>
+    3) Создать свою вселенную.<br>
+    Перейдите в <strong><a href = 'constructor.html'>"Конструктор"</a></strong>. Загрузите карточки персонажей и скачайте вселенную в файл. После чего, отправьте файл оппоненту и загрузите его в игру через <strong><a href = 'upload.html'>"Своя игра"</a></strong>.<br><br>
+    Благодарю всех, кто проявил интерес к проекту! Вы можете сказать <strong>"Спасибо"</strong> через кнопку <strong><a href = 'https://forms.gle/kx9hjRVi6KT9TyFg7'>"Оценить"</a></strong>, <strong><a href = 'payment.html'>"Помочь проекту"</a></strong> и оставив звезду в <strong><a href = 'https://github.com/yupest/guess_who'>GitHub</a></strong>, так обновления будут чаще:)
+    </p>
+  </details>
+  <div>
+    <nav id = "primary_nav_wrap"></nav>
+  </div>
   <div class="share-url"></div>
-  <div id = 'hero'></div>
-  <div id = 'game' class="grid">
-    <script src="js/script_v3.js">   
-    </script>
+  <div id="hero"></div>
+  <div id="game" class="grid">
+    <script src="js/game_core.js"></script>
+    <script src="js/script_v3.js"></script>
   </div>
+
 </section>
 </body>
+<footer class="footer">
+  <a href="https://github.com/yupest/guess_who" target="_blank">yupest</a>
+</footer>
 </html>
